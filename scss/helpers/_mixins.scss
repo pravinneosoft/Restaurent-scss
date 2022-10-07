@@ -33,3 +33,7 @@
     align-items: center;
     flex-wrap: wrap;
 }
+@mixin backgroung-image{
+  background-repeat: no-repeat;
+  background-size: cover;
+}

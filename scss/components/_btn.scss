@@ -7,11 +7,22 @@
     border-radius: 5px;}
 }
 &-readmore{
-    padding: 7px !important;
-    &:hover{
+    padding: 7px 20px !important;
     background-color: $color-black !important;
     color: $color-white !important;
+    &:hover{
+    background-color: $color-yellow !important;
+
   
     border-radius: 5px;}
 }
 }
+
+
+
+
+
+
+
+
+

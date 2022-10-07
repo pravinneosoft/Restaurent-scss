@@ -1,43 +1,53 @@
-.banner{
+.banner {
     background-image: url('../../images/hero.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include backgroung-image;
     height: 600px;
     width: 100%;
     @include flexcenter;
-    &__desc{
+
+    &__desc {
         @include flexcenter;
-        
+
     }
-    &__content{
+
+    &__content {
         width: 50%;
-        h1{
+
+        h1 {
             font-size: 40px;
 
         }
-        p{
+
+        p {
             font-size: 16px;
         }
     }
-    &__strong{
+
+    &__strong {
         color: $color-yellow;
     }
 }
-.about{
+
+.about {
     padding: 64px 0;
-    h1{
+
+    &__title {
         text-align: center;
     }
-    &__image{
-        display: flex;
+
+    &__image {
+        @include flexcenter;
         justify-content: center;
         width: initial;
     }
-    &__content{
+
+    &__content {
         @include flexcenter;
-        div{
+
+        div {
             width: 44%;
-            h2{
+
+            h2 {
                 font-size: 24px;
                 font-weight: 700;
                 margin-bottom: 22px;
@@ -45,11 +55,73 @@
         }
     }
 }
-.services{
+
+.services {
     background-color: $light-grey;
     padding: 64px 0;
-    h1{
-        text-align: center;
 
+    h1 {
+        @extend .about__title;
+
+    }
+
+    &__wrapper {
+        @include flexcenter;
+        justify-content: space-evenly;
+        margin-top: 32px;
+
+        .card {
+            width: 25%;
+            padding: 50px;
+            border-radius: 5px;
+
+            h2 {
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 1rem;
+                margin-bottom: 26px;
+            }
+        }
+    }
+
+}
+
+.products {
+    background-color: $color-alise;
+padding: 58px 0;
+    h1 {
+        @extend .about__title;
+    }
+
+    &__card {
+        width: 93%;
+        background-color: $color-white;
+        text-align: center;
+        padding: 25px 0;
+
+        div {
+            @include flexcenter;
+justify-content: center;
+            img {
+                width: 275px;
+                height: 218px;
+            }
+        }
+    }
+hr{
+    width: 84%;
+    margin: 0 auto;
+}
+    img {
+        &:not(:last-child) {
+            width: 275px;
+        }
+    }
+
+    a {
+        color: $color-black;
     }
 }

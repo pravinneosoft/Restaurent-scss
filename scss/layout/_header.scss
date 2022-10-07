@@ -62,9 +62,9 @@ background-color: $color-alise;
 
     &__links {
         color: $black-grey;
-        font-size: 12.8px;
+        font-size: 15px;
         padding-right: 34.1px;
-        font-weight: 400;
+        font-weight: 500;
 
         @include breakpoint (ipad-max) {
             padding: 0;
