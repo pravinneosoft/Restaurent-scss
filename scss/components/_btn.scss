@@ -1,0 +1,17 @@
+.btn{
+    border: 0;
+&-read{
+    &:hover{
+    background-color: $color-yellow !important;
+    color: $color-white !important;
+    border-radius: 5px;}
+}
+&-readmore{
+    padding: 7px !important;
+    &:hover{
+    background-color: $color-black !important;
+    color: $color-white !important;
+  
+    border-radius: 5px;}
+}
+}

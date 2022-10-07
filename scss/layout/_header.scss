@@ -1,0 +1,114 @@
+header{
+    background-color: $color-alise;
+}
+.nav {
+    height: 78.2px;
+    width: 100%;
+ @include flexcenter;
+
+    &__list {
+        @include flexcenter;
+        z-index: 1;
+background-color: $color-alise;
+        @include breakpoint(ipad-max) {
+            display: inline;
+            padding-left: 20px;
+            flex-wrap: wrap;
+            z-index: 3;
+            row-gap: 9px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 78.2px;
+        }
+    }
+
+    &__logo {
+        width: 116px;
+
+        @include breakpoint(ipad-max) {
+            width: 170px;
+        }
+    }
+
+
+
+    & &__list li {
+        display: inline-block;
+
+        @include breakpoint(ipad-max) {
+            display: block;
+            margin: 30px 0;
+        }
+
+    }
+
+    &__menu {
+        @include breakpoint(ipad-max) {
+            text-align: justify;
+            width: 30%;
+        }
+
+        @include breakpoint(mobile-max) {
+            width: 44%;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            width: 100%;
+            text-align: inherit;
+        }
+    }
+
+    &__links {
+        color: $black-grey;
+        font-size: 12.8px;
+        padding-right: 34.1px;
+        font-weight: 400;
+
+        @include breakpoint (ipad-max) {
+            padding: 0;
+            font-size: 20px;
+        }
+    }
+
+    &__links:hover {
+        color: $color-red;
+        transition: .5s;
+    }
+
+    &__price {
+        padding-right: 21.3px !important;
+    }
+
+}
+
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (min-width: 991px) {
+    .nav__list {
+        display: block;
+        position: static;
+        width: auto;
+        background: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}

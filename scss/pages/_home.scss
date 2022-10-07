@@ -1,0 +1,55 @@
+.banner{
+    background-image: url('../../images/hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    @include flexcenter;
+    &__desc{
+        @include flexcenter;
+        
+    }
+    &__content{
+        width: 50%;
+        h1{
+            font-size: 40px;
+
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    &__strong{
+        color: $color-yellow;
+    }
+}
+.about{
+    padding: 64px 0;
+    h1{
+        text-align: center;
+    }
+    &__image{
+        display: flex;
+        justify-content: center;
+        width: initial;
+    }
+    &__content{
+        @include flexcenter;
+        div{
+            width: 44%;
+            h2{
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 22px;
+            }
+        }
+    }
+}
+.services{
+    background-color: $light-grey;
+    padding: 64px 0;
+    h1{
+        text-align: center;
+
+    }
+}
